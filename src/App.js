@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Map from './components/map/Map'
 
 function App() {
 
@@ -34,9 +35,7 @@ function App() {
         <div className="sidepanel">
           side panel
         </div>
-        <div className="map">
-          map
-        </div>
+        <Map/>
       </div>
     </div>
   )

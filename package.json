@@ -8,6 +8,7 @@
     "start": "npx webpack-dev-server --hot --inline --config webpack.config.devserver.js"
   },
   "dependencies": {
+    "maplibre-gl": "^2.3.0",
     "react": "^16.4.0",
     "react-dom": "^16.3.2"
   },
