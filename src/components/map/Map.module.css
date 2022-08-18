@@ -3,3 +3,10 @@
     height: 100%;
     position: relative;
   }
+
+.marker {
+  background: orange;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+}

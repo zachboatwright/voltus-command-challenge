@@ -4,7 +4,7 @@ import Map from './components/map/Map'
 
 function App() {
 
-  const facility = {
+  const org = {
     name: "Singleton Corp",
     id:0,
     facilities:[
@@ -29,13 +29,13 @@ function App() {
   return (
     <div className="app">
       <header>
-        {facility.name}
+        {org.name}
       </header>
       <div className="body">
         <div className="sidepanel">
           side panel
         </div>
-        <Map/>
+        <Map facilities={org.facilities} />
       </div>
     </div>
   )
