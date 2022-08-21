@@ -12,3 +12,26 @@
 .panel:first-of-type{
     margin-top: 20px
 }
+
+.form {
+    text-align: left;
+}
+
+.form > * {
+    margin-right: 5px;
+}
+
+.table {
+    width: 100%;
+}
+
+.row {
+   text-align: left; 
+}
+
+.row:nth-child(even) td {
+    background: #96a7d9;
+}
+.row:last-child td {
+    background: #56c956;
+}
