@@ -1,0 +1,14 @@
+.sidepanel {
+    flex: 1;
+    display: grid;
+}
+
+.panel {
+    box-shadow: 0px 1px 3px 2px #cdcdcd;
+    margin: 10px;
+    margin-top: 0;
+    padding: 15px;
+}
+.panel:first-of-type{
+    margin-top: 20px
+}

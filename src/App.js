@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './App.css'
-import Map from './components/map/Map'
+import Map from './components/Map/Map'
+import SidePanel from './components/SidePanel/SidePanel'
 
 function App() {
 
@@ -23,9 +24,7 @@ function App() {
         {org.name}
       </header>
       <div className="body">
-        <div className="sidepanel">
-          side panel
-        </div>
+        <SidePanel facilities={org.facilities} />
         <Map facilities={org.facilities} />
       </div>
     </div>
