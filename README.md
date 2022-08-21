@@ -54,3 +54,6 @@ Try to duplicate the screenshots provided as closely as you can, but feel free t
 3. Please let us know if you have any questions about the challenge.
 
 We hope that you can complete the challenge within 7 days of sending it to you. We understand complications can pop up, so let us know if you need more time.
+
+## Notes
+To view a facility, add a query string with label "organization_id" to url. eg, http://localhost:8080/?organization_id=3
