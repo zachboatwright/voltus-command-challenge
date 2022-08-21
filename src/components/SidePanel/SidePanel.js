@@ -8,6 +8,7 @@ function SidePanel({facilities}) {
     const updateFacilityReading = () => {
         const id = document.getElementById('facility').value
         const value = Number(document.getElementById('reading').value)
+        if (id === 'Select') return
         const newReadings = JSON.parse(JSON.stringify(facilityReadings))
         newReadings[id] = value
         setFacilityReadings(newReadings)
@@ -33,7 +34,9 @@ function SidePanel({facilities}) {
                         ))
                     }
                 </select>
-                <input type="number" id="reading" placeholder="kw" />
+                <input type="number" id="reading" placeholder="kw" onKeyPress={e => {
+                    if (e.keyCode === 0) updateFacilityReading()
+                }} />
                 <button onClick={updateFacilityReading}>Submit</button>
             </div>
             <div className={css.panel}>
