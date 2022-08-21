@@ -12,7 +12,7 @@ function Map({facilities}) {
       if (map.current) return
       map.current = new maplibregl.Map({
         container: mapContainer.current,
-        style: 'https://demotiles.maplibre.org/style.json',
+        style: 'https://api.maptiler.com/maps/basic-v2/style.json?key=pa4lsVWPtH81wuZVGMw1',
       })
   
       map.current.addControl(new maplibregl.NavigationControl({showCompass: false}), 'top-left')
