@@ -9,10 +9,12 @@ function App() {
 
   const urlParams = new URLSearchParams(window.location.search)
   const orgId = urlParams.get('organization_id')
-  fetch(`https://frontend-challenge.dev-cluster.voltus.co/facilities/${orgId}`)
+  if (!org) {
+    fetch(`https://frontend-challenge.dev-cluster.voltus.co/facilities/${orgId}`)
     .then(result => result.json())
     .then(result => setOrg(result))
-  
+  }
+
   if (!org) return (
     <div>
       loading
