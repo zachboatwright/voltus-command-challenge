@@ -6,9 +6,9 @@ function SidePanel({facilities}) {
     const [facilityReadings, setFacilityReadings] = useState()
 
     const updateFacilityReading = () => {
+        if (id === 'Select') return
         const id = document.getElementById('facility').value
         const value = Number(document.getElementById('reading').value)
-        if (id === 'Select') return
         const newReadings = JSON.parse(JSON.stringify(facilityReadings))
         newReadings[id] = value
         setFacilityReadings(newReadings)
@@ -51,7 +51,6 @@ function SidePanel({facilities}) {
                     <tbody>
                         {
                             facilities.map(facility => {
-
                                 return (
                                     <tr key={facility.id} className={css.row}>
                                         <td>{facility.name}</td>
