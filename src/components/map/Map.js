@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, {useEffect, useState, useRef} from 'react'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import css from './Map.module.css'
